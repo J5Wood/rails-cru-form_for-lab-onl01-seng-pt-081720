@@ -1,7 +1,29 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Song.create(name: "Song 1")
+Song.create(name: "Song 2")
+Song.create(name: "Song 3")
+Song.create(name: "Song 4")
+Song.create(name: "Song 5")
+Song.create(name: "Song 6")
+Song.create(name: "Song 7")
+Song.create(name: "Song 8")
+Song.create(name: "Song 9")
+
+Artist.create(name: "Bill", bio: "Some Bio 1").songs << Song.find(1)
+Artist.create(name: "Jill", bio: "Some Bio 2").songs << Song.find(2)
+Artist.create(name: "Nill", bio: "Some Bio 3").songs << Song.find(3)
+Artist.create(name: "Mill", bio: "Some Bio 4").songs << Song.find(4)
+Artist.create(name: "Hill", bio: "Some Bio 5").songs << Song.find(5)
+Artist.create(name: "Till", bio: "Some Bio 6").songs << Song.find(6)
+Artist.create(name: "Pill", bio: "Some Bio 7").songs << Song.find(7)
+Artist.create(name: "Dill", bio: "Some Bio 8").songs << Song.find(8)
+Artist.create(name: "Will", bio: "Some Bio 9").songs << Song.find(9)
+
+Genre.create(name: "Genre 1").songs << Song.find(1)
+Genre.create(name: "Genre 2").songs << Song.find(2)
+Genre.create(name: "Genre 3").songs << Song.find(3)
+Genre.create(name: "Genre 4").songs << Song.find(4)
+Genre.create(name: "Genre 5").songs << Song.find(5)
+Genre.create(name: "Genre 6").songs << Song.find(6)
+Genre.create(name: "Genre 7").songs << Song.find(7)
+Genre.create(name: "Genre 8").songs << Song.find(8)
+Genre.create(name: "Genre 9").songs << Song.find(9)
